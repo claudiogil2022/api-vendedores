@@ -14,7 +14,6 @@ public class CriarVendedorRequest {
     @Size(min = 2, max = 100, message = "Nome deve ter entre 2 e 100 caracteres")
     private String nome;
     
-    @NotNull(message = "Data de nascimento é obrigatória")
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataNascimento;
     
